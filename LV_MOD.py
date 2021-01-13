@@ -434,7 +434,7 @@ def create_lines(network, bv_416v, connectivity_node_mrid, plsi_1):
 
     network.add(acls7_loc)
 
-    acls7 = AcLineSegment(mrid="acls7",name="acls7",
+    acls7= AcLineSegment(mrid="acls7",name="acls7",
                           base_voltage=bv_416v,
                           length=12.65,
                           per_length_sequence_impedance=plsi_2,

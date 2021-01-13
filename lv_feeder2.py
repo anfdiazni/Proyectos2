@@ -146,7 +146,7 @@ def create_feeder():
     breaker_loc.add_point(PositionPoint(149.10967971954085,-35.269618243614396))
     network.add(breaker_loc)
 
-    breaker = Breaker(mrid="Breaker", base_voltage=bv_416v, location=breaker_loc)
+    breaker = Breaker(mrid="Breaker", name="Breaker-In",base_voltage=bv_416v, location=breaker_loc)
 
     t1 = Terminal(mrid='br-t1', phases=PhaseCode.ABCN, conducting_equipment=breaker)
     network.connect_by_mrid(t1, 'Bus 0')
@@ -173,7 +173,7 @@ def create_feeder():
     acls1_loc.add_point(PositionPoint(149.11003377113082,-35.27061681962318))
     network.add(acls1_loc)
 
-    acls1 = AcLineSegment(mrid="acls1",
+    acls1 = AcLineSegment(mrid="acls1",name="acls1",
                           base_voltage=bv_416v,
                           length=31.71938,
                           per_length_sequence_impedance=plsi_1,
@@ -318,7 +318,7 @@ def create_lines(network, bv_416v, connectivity_node_mrid, plsi_1):
     plsi_2 = PerLengthSequenceImpedance(mrid="2c_16", r=1150, x=88.0, r0=1200, x0=88.0)
     network.add(plsi_2)
 
-    acls2 = AcLineSegment(mrid="acls2",
+    acls2 = AcLineSegment(mrid="acls2",name="acls2",
                           base_voltage=bv_416v,
                           length=6.75,
                           per_length_sequence_impedance=plsi_2,
@@ -342,7 +342,7 @@ def create_lines(network, bv_416v, connectivity_node_mrid, plsi_1):
     acls3_loc.add_point(PositionPoint(149.11038782272078, -35.269889787431744))
     network.add(acls3_loc)
 
-    acls3 = AcLineSegment(mrid="acls3",
+    acls3 = AcLineSegment(mrid="acls3",name="acls3",
                           base_voltage=bv_416v,
                           length=5.3248,
                           per_length_sequence_impedance=plsi_2,
@@ -366,7 +366,7 @@ def create_lines(network, bv_416v, connectivity_node_mrid, plsi_1):
     acls4_loc.add_point(PositionPoint(149.11048438224535, -35.27024892463094))
     network.add(acls4_loc)
 
-    acls4 = AcLineSegment(mrid="acls4",
+    acls4 = AcLineSegment(mrid="acls4",name="acls4",
                           base_voltage=bv_416v,
                           length=75.6,
                           per_length_sequence_impedance=plsi_2,
@@ -389,7 +389,7 @@ def create_lines(network, bv_416v, connectivity_node_mrid, plsi_1):
     acls5_loc.add_point(PositionPoint(149.110248347852, -35.27128253012409))
     network.add(acls5_loc)
 
-    acls5 = AcLineSegment(mrid="acls5",
+    acls5 = AcLineSegment(mrid="acls5",name="acls5",
                           base_voltage=bv_416v,
                           length=25.5,
                           per_length_sequence_impedance=plsi_1,
@@ -412,7 +412,7 @@ def create_lines(network, bv_416v, connectivity_node_mrid, plsi_1):
     acls6_loc.add_point(PositionPoint(149.11031272086836, -35.27192195742791))
     network.add(acls6_loc)
 
-    acls6 = AcLineSegment(mrid="acls6",
+    acls6 = AcLineSegment(mrid="acls6",name="acls6",
                           base_voltage=bv_416v,
                           length=5.7,
                           per_length_sequence_impedance=plsi_2,
@@ -435,7 +435,7 @@ def create_lines(network, bv_416v, connectivity_node_mrid, plsi_1):
     acls7_loc.add_point(PositionPoint(149.1108598915074, -35.271930716670994))
     network.add(acls7_loc)
 
-    acls7 = AcLineSegment(mrid="acls7",
+    acls7 = AcLineSegment(mrid="acls7",name="acls7",
                           base_voltage=bv_416v,
                           length=12.65,
                           per_length_sequence_impedance=plsi_2,
